@@ -1,0 +1,158 @@
+<!DOCTYPE html>	
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-compatible" content="ie=edge">
+	<title>FITNESS</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<style>
+	body{
+		margin:0px;
+		padding:0px;
+		background: url('temp.jpg');
+
+	}
+
+	.left{
+	    color:white;
+		display:inline-block;
+		position:absolute;
+        left:20px;
+        top:4px;
+        padding:11px;
+    }
+
+    .left img{
+    	padding:4px;
+    	width:50px;
+    	height:38px;
+    	filter:invert(100%);
+    }
+
+	.mid{
+		display:block;
+		width:36%;
+		margin:17px auto;
+		color:white;
+		
+
+	}
+	.right{
+        color:white;
+        display:inline-block;
+        position:absolute;
+        right:38px;
+        top:24px;
+	}
+	.bt{
+		margin:0px 9px;
+		background-color:black;
+		color:white;
+		padding:9px;
+		border:2px solid  grey;
+		border-radius:10px;
+		font-size:15px;
+		cursor:pointer;
+
+		}
+		.bt:hover{
+			background-color:grey;
+		}
+	.navbar{
+		display:inline-block;
+	}
+	.navbar li{
+		display:inline-block;
+		font-size:18px;
+	}
+	.navbar li a{
+		color:white;
+		text-decoration:none;
+		padding:30px;
+	}
+	.navbar li a:hover, .navbar li a.active{
+		color:cyan;
+	}
+	.container{
+		color:white;
+		border:3px solid white;
+		margin:150px;
+		width:30%;
+		height:260px;
+		border-radius:12px;
+
+	}
+	.btn{
+		display:block;
+		width:25%;
+		margin:8px auto;
+		background-color:black;
+		color:white;
+		border-color:white;
+		border-radius:6px;
+		padding:3px;
+	}
+	.btn:hover{
+		color:cyan;
+	}
+	.form-group input{
+		text-align:center;
+		display:block;
+		width:228px;
+		padding:4px;
+		margin: 6px auto;
+		border-radius:10px;
+
+	}
+	.container h2{
+		text-align:center;
+
+	}
+
+</style>
+
+
+<body>
+	<header class="header">
+		<div class="left">
+			<img src="icon.png" alt="">
+			<div> MY GYM</div>
+		</div>
+
+		<div class="mid">
+			<ul class="navbar">
+				<li><a href="#" class="active">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Works</a></li>
+			</ul>
+		</div>
+
+		<div class="right">
+			<button class="bt">Call Us</button>
+			<button class="bt">Email Us</button>
+		    
+		</div>
+	</header>
+	<div class = "container">
+		<h2>Join the best gym now!</h2>
+		<form action="noaction.php">
+			<div class="form-group">
+				<input type="text" name="" placeholder="Enter your name">
+			</div>
+			<div class="form-group">
+				<input type="text" name="" placeholder="Enter your phone number">
+			</div>
+			<div class="form-group">
+				<input type="text" name="" placeholder="Enter your email">
+			</div>
+			<div class="form-group">
+				<input type="text" name="" placeholder="Enter your age ">
+			</div>
+			<button class="btn">Submit</button>
+	</div>
+</body>
+</html>
